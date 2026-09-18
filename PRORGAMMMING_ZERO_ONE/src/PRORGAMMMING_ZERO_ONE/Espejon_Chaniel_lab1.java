@@ -29,6 +29,7 @@ public class Espejon_Chaniel_lab1 {
 
      System.out.println("\n---Output---\n");
      System.out.println("Name:" + name);
-     System.out.println("Random Number: " + numb);
+     System.out.println("Random Number: " + numb)
+	 System.out.println("Hobbies: " + Hobbies);
 	}
 }
