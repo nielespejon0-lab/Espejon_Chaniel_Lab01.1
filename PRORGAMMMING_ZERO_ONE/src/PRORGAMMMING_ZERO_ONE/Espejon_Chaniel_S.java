@@ -37,25 +37,28 @@ public class Espejon_Chaniel_S {
         } else {
             System.out.println("Your outstanding balance is " + balance);
         }
-
         goBack(args);
     }
-
-   
+    
     public static void deposit(String[] args) {
-        System.out.println("\n- Deposit -");
+    	System.out.println("\n- Deposit -");
+    	nextdeposit(args);
+    }
+   
+    public static void nextdeposit(String[] args) {
         System.out.print("Enter the amount: ");
         double amount = sc.nextDouble();
 
         if (amount <= 0) {
         	System.out.println("Invalid amount!");
+        	nextdeposit(args);
         } else if (amount >= 5001) {
-        	System.out.println("Deposit limit!");    
+        	System.out.println("Deposit limit!");
+        	nextdeposit(args);
         } else if (amount > 0) {
         	balance += amount;
         	System.out.println(amount + " has been added to your account!");
         }
-
         goBack(args);
     }
 
@@ -78,8 +81,8 @@ public class Espejon_Chaniel_S {
         } else {
             balance -= amount;
             System.out.println("Your outstanding balance is " + balance);
-            goBack(args);
         }
+        goBack(args);
     }
 
    
@@ -93,6 +96,5 @@ public class Espejon_Chaniel_S {
         } else {
             System.out.println("Thank you come again!");
         }
-    
    }
 }
