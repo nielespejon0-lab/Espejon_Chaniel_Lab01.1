@@ -3,7 +3,6 @@ package PRORGAMMMING_ZERO_ONE;
 import java.util.Scanner;
 
 public class Menu {
-	
     public static int showMenu(Scanner sc1) {
         String equal = "=";
         String line = "||";
