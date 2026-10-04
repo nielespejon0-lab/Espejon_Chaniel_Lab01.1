@@ -74,7 +74,7 @@ public class Espejon_Chaniel_S {
 
         if (amount <= 0) {
             System.out.println("Invalid amount!\n");
-            nextwithdraw(args);         
+            nextwithdraw(args);         	
         } else if (amount > balance) {
             System.out.println("Not enough balance!\n");
             nextwithdraw(args);
@@ -108,7 +108,7 @@ public class Espejon_Chaniel_S {
         
         if (answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("y")) {
             main(args); 
-        } else {
+        } else if (answer.equalsIgnoreCase("no") || answer.equalsIgnoreCase("n")){
             System.out.println("\nThank you come again!");
         }
    }
