@@ -94,13 +94,11 @@ public class Espejon_Chaniel_S {
     	String answer = sc2.next();
     	
 		if (answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("y")) {
-			System.out.println("Thank you come again!");
+			System.out.println("\nThank you come again!");
 	    } else if (answer.equalsIgnoreCase("no") || answer.equalsIgnoreCase("n")) {
 	    	main(args); 
-	    } else {
-	    	System.out.println("Invalid input! Please enter yes or no. Thank you\n");
-	    	nextexit(args);
-	    }
+	    } 
+	   
 	}
     
     public static void goBack(String[] args) {
@@ -111,7 +109,7 @@ public class Espejon_Chaniel_S {
         if (answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("y")) {
             main(args); 
         } else {
-            System.out.println("Thank you come again!");
+            System.out.println("\nThank you come again!");
         }
    }
 }
