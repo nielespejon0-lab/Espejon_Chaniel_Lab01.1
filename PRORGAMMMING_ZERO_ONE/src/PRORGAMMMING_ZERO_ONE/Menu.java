@@ -3,7 +3,8 @@ package PRORGAMMMING_ZERO_ONE;
 import java.util.Scanner;
 
 public class Menu {
-    public static int showMenu(Scanner sc) {
+	
+    public static int showMenu(Scanner sc1) {
         String equal = "=";
         String line = "||";
         String Bank = "ABC BANK";
@@ -21,6 +22,6 @@ public class Menu {
         System.out.println(equal.repeat(42) + "\n");
 
         System.out.print("Enter your choice (1,2,3,4): ");
-        return sc .nextInt();
+        return sc1.nextInt();
     }
 }

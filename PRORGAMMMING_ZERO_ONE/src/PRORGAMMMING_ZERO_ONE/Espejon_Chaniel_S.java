@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Espejon_Chaniel_S {
 		
 	static double balance = 0;
-    static Scanner sc = new Scanner(System.in);
+    static Scanner sc2 = new Scanner(System.in);
     
     public static void main(String[] args) {
-        int choice = Menu.showMenu(sc);
+        int choice = Menu.showMenu(sc2);
         switch (choice) {
             case 1:
                 checkBalance(args);
@@ -47,7 +47,7 @@ public class Espejon_Chaniel_S {
    
     public static void nextdeposit(String[] args) {
         System.out.print("Enter the amount: ");
-        double amount = sc.nextDouble();
+        double amount = sc2.nextDouble();
 
         if (amount <= 0) {
         	System.out.println("Invalid amount!\n");
@@ -70,7 +70,7 @@ public class Espejon_Chaniel_S {
 
     public static void nextwithdraw(String[] args) {
         System.out.print("Enter the amount: ");
-        double amount = sc.nextDouble();
+        double amount = sc2.nextDouble();
 
         if (amount <= 0) {
             System.out.println("Invalid amount!\n");
@@ -88,12 +88,12 @@ public class Espejon_Chaniel_S {
    
     public static void goBack(String[] args) {
         System.out.print("\nGo back to Main Menu? (yes/no): ");
-        String answer = sc.next();
+        String answer = sc2.next();
         System.out.println();
         
         if (answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("y")) {
             main(args); 
-        } else if (answer.equalsIgnoreCase("no") || answer.equalsIgnoreCase("n")) {
+        } else {
             System.out.println("Thank you come again!");
         }
    }
