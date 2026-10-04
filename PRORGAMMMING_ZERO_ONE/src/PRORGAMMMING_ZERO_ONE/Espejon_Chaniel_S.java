@@ -50,10 +50,10 @@ public class Espejon_Chaniel_S {
         double amount = sc.nextDouble();
 
         if (amount <= 0) {
-        	System.out.println("Invalid amount!");
+        	System.out.println("Invalid amount!\n");
         	nextdeposit(args);
         } else if (amount >= 5001) {
-        	System.out.println("Deposit limit!");
+        	System.out.println("Deposit limit!\n");
         	nextdeposit(args);
         } else if (amount > 0) {
         	balance += amount;
@@ -73,10 +73,10 @@ public class Espejon_Chaniel_S {
         double amount = sc.nextDouble();
 
         if (amount <= 0) {
-            System.out.println("Invalid amount!");
+            System.out.println("Invalid amount!\n");
             nextwithdraw(args);         
         } else if (amount > balance) {
-            System.out.println("Not enough balance!");
+            System.out.println("Not enough balance!\n");
             nextwithdraw(args);
         } else {
             balance -= amount;
@@ -93,7 +93,7 @@ public class Espejon_Chaniel_S {
         
         if (answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("y")) {
             main(args); 
-        } else {
+        } else if (answer.equalsIgnoreCase("no") || answer.equalsIgnoreCase("n")) {
             System.out.println("Thank you come again!");
         }
    }
