@@ -20,7 +20,7 @@ public class Espejon_Chaniel_S {
                 withdraw(args);
                 break;
             case 4:
-                System.out.println("Thank you come again!");
+                exit(args);
                 break;
             default:
                 System.out.println("Invalid choice! Please enter 1, 2, 3 or 4.");
@@ -85,7 +85,24 @@ public class Espejon_Chaniel_S {
         goBack(args);
     }
 
-   
+    public static void exit(String[] args) {
+    	nextexit(args);
+    }	
+	
+    public static void nextexit(String[] args) {
+    	System.out.print("Are you sure you want to exit? (yes/no): ");
+    	String answer = sc2.next();
+    	
+		if (answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("y")) {
+			System.out.println("Thank you come again!");
+	    } else if (answer.equalsIgnoreCase("no") || answer.equalsIgnoreCase("n")) {
+	    	main(args); 
+	    } else {
+	    	System.out.println("Invalid input! Please enter yes or no. Thank you\n");
+	    	nextexit(args);
+	    }
+	}
+    
     public static void goBack(String[] args) {
         System.out.print("\nGo back to Main Menu? (yes/no): ");
         String answer = sc2.next();
