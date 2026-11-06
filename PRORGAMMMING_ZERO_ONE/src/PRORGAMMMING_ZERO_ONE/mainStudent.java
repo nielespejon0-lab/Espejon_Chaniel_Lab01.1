@@ -9,5 +9,5 @@ public static void main(String[] args) {
 	stu1.dispayinfo();
 	stu2.dispayinfo();
 	stu3.dispayinfo();
-}
+	}
 }

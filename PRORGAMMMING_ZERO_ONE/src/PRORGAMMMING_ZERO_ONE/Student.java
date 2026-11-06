@@ -19,6 +19,6 @@ void dispayinfo() {
 	} else {
 		System.out.println("Name: " + name);
 		System.out.println("Result: " + "Failed\n");
+		}
 	}
-}
 }

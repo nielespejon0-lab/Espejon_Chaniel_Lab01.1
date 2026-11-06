@@ -5,5 +5,5 @@ public class mainRectangle {
         Rectangle rect = new Rectangle( 5, 3);
         System.out.println(rect.getArea());
         System.out.println(rect.getPerimeter());
-    	}
+    }
 }
